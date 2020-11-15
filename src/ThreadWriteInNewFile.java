@@ -3,18 +3,18 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class TreadWriteInNewFile implements Runnable {
-    private ClassForCopyFile classForCopyFile;
+public class ThreadWriteInNewFile implements Runnable {
+    private CopyFile classForCopyFile;
     private File newFile;
     private int flag;
 
-    public TreadWriteInNewFile(ClassForCopyFile classForCopyFile, File newFile, int flag) {
+    public ThreadWriteInNewFile(CopyFile classForCopyFile, File newFile, int flag) {
         this.classForCopyFile = classForCopyFile;
         this.newFile = newFile;
         this.flag = flag;
     }
 
-    public TreadWriteInNewFile() {
+    public ThreadWriteInNewFile() {
 
     }
 
