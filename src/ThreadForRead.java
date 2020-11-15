@@ -4,11 +4,11 @@ import java.io.IOException;
 
 public class ThreadForRead implements Runnable {
 
-    private ClassForCopyFile classForCopyFile;
+    private CopyFile classForCopyFile;
     private int flag;
     private long startRead;
 
-    public ThreadForRead(ClassForCopyFile classForCopyFile, int flag) {
+    public ThreadForRead(CopyFile classForCopyFile, int flag) {
         this.classForCopyFile = classForCopyFile;
         this.flag = flag;
         this.startRead = 0;

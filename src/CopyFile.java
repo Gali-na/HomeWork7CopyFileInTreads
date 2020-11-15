@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class ClassForCopyFile {
+public class CopyFile {
     private File file;
     private int flag =1;
     private byte[] numberOfBytesToCopy;
@@ -24,7 +24,7 @@ public class ClassForCopyFile {
         this.stopWrite = stopWrite;
     }
 
-    public ClassForCopyFile(File file) {
+    public CopyFile(File file) {
         this.file = file;
     }
 

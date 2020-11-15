@@ -1,15 +1,15 @@
-public class TreadForPintRezultCopy implements Runnable {
+public class ThreadForPintRezultCopy implements Runnable {
 
-    private ClassForCopyFile classForCopyFile;
+    private CopyFile classForCopyFile;
     private int flag;
     private int rezult;
 
-    public TreadForPintRezultCopy(ClassForCopyFile classForCopyFile, int flag) {
+    public ThreadForPintRezultCopy(CopyFile classForCopyFile, int flag) {
         this.classForCopyFile = classForCopyFile;
         this.flag = flag;
         this.rezult = 0;
     }
-    public TreadForPintRezultCopy() {
+    public ThreadForPintRezultCopy() {
 
     }
     private void printRezult() {
